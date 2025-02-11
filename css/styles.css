@@ -1,25 +1,26 @@
-/* My Awesome Styles */
 
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
-
-* {
-    outline: 1px dotted black;
-}
 
 /* Doodle Stage */
 #stage {
-  background: #ccc;
   height: 300px;
   width: 600px;
 }
 
-#heart1 {
-  fill: red;
-}
+ @keyframes floatBalloon {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-#heart2 {
-  fill: green;
-}
+  #blue, #pink, #outline, #string{
+    animation: floatBalloon 5s ease-in-out infinite;
+  }
