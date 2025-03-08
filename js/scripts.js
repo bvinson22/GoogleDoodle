@@ -2,6 +2,8 @@
 
 
 
+
+
 // stars
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   stars.forEach((star, index) => {
     const twinkleTL = gsap.timeline({
       repeat: -1,
-      delay: index * 0.7, // Stagger the start time of each star's timeline
+      delay: index * 0.7, 
     });
 
     // Smooth twinkling effect
@@ -78,3 +80,17 @@ gsap.to("#blue, #pink, #outline, #string, #shine", {
   }
 });
 
+// Baloon color change
+document.addEventListener("DOMContentLoaded", function() {
+    const colors = ["#FF6347", "#FFD700", "#6A5ACD", "#40E0D0", "#FF69B4"];
+
+    function getRandomColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    const balloons = document.querySelectorAll(".color");
+
+    balloons.forEach(balloon => {
+        balloon.setAttribute("fill", getRandomColor());
+    });
+});
