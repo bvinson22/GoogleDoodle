@@ -1,4 +1,4 @@
-# My Topic Google Doodle
+# Disney Google Doodle
 
 50+ words about your Google Doodle.
 
@@ -13,4 +13,5 @@ I created evrything using figma
 Codepen
 Github
 Gsap
-Claude
+Claude Ai
+Chat GPT

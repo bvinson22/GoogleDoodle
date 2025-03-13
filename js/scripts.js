@@ -4,6 +4,8 @@
 
 
 
+
+
 // stars
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -59,17 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-gsap.set("#blue, #pink, #outline, #string, #shine", { y: 100, opacity: 0 });
+gsap.set("#balloon, #outline, #string, #shine", { y: 100, opacity: 0 });
 
 // Animate everything together
-gsap.to("#blue, #pink, #outline, #string, #shine", {
+gsap.to("#balloon, #outline, #string, #shine", {
   y: 0,
   opacity: 1,
   duration: 2.5,
   ease: "power2.out",
   onComplete: () => {
     // Floating effect
-    gsap.to("#blue, #pink, #outline, #string, #shine", {
+    gsap.to("#balloon #outline, #string, #shine", {
       y: "-=10",
       opacity: 0.8,
       duration: 2,
@@ -80,7 +82,7 @@ gsap.to("#blue, #pink, #outline, #string, #shine", {
   }
 });
 
-// Baloon color change
+// Balloon color change
 document.addEventListener("DOMContentLoaded", function() {
     const colors = ["#FF6347", "#FFD700", "#6A5ACD", "#40E0D0", "#FF69B4"];
 

@@ -1,6 +1,6 @@
 
 
-body {
+bbody {
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -38,7 +38,7 @@ body {
   }
 }
 
-#blue, #pink, #outline, #string {
+#balloon, #outline, #string {
   animation: floatBalloon 5s ease-in-out infinite;
   
 }
